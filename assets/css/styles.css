@@ -1,0 +1,60 @@
+﻿/* PokerRangeTrainer Landing Page — Cloudflare Pages */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #e0e0e0; background: #1a1a2e; line-height: 1.6; }
+section { padding: 80px 20px; max-width: 960px; margin: 0 auto; }
+h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 16px; }
+h2 { font-size: 2rem; font-weight: 600; margin-bottom: 24px; color: #4ecb71; }
+h3 { font-size: 1.4rem; margin-bottom: 12px; }
+p { font-size: 1.1rem; margin-bottom: 16px; color: #cccccc; }
+.btn { display: inline-block; padding: 14px 32px; border-radius: 6px; font-size: 1.05rem; font-weight: 600; text-decoration: none; cursor: pointer; margin: 8px 8px 8px 0; transition: all 0.2s; }
+.btn-primary { background: #4ecb71; color: #1a1a2e; }
+.btn-primary:hover { background: #3db85e; }
+.btn-secondary { background: transparent; color: #4ecb71; border: 2px solid #4ecb71; }
+.btn-secondary:hover { background: rgba(78,203,113,0.1); }
+.btn-accent { background: #e8a838; color: #1a1a2e; }
+.btn-accent:hover { background: #d4952a; }
+
+/* Hero */
+#hero { text-align: center; padding: 120px 20px 100px; background: linear-gradient(135deg, #0d0d1a 0%, #1a3a2a 50%, #0d0d1a 100%); }
+#hero h1 { font-size: 3.2rem; }
+#hero .subhead { font-size: 1.2rem; color: #aaaaaa; max-width: 640px; margin: 0 auto 32px; }
+
+/* Alternating sections */
+.alt-bg { background: #162032; }
+.split { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
+.split > div { flex: 1; min-width: 280px; }
+
+/* CTA cards */
+.cta-card { background: #1e2d3d; border-radius: 12px; padding: 48px; text-align: center; border: 1px solid #2a3a4a; }
+.cta-card.accent { background: #2a2418; border-color: #4a3a1a; }
+
+/* Steps */
+.steps { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+.step { background: #1e2d3d; border-radius: 10px; padding: 28px 20px; text-align: center; flex: 1; min-width: 150px; max-width: 180px; }
+.step-num { font-size: 2.2rem; font-weight: 700; color: #4ecb71; margin-bottom: 8px; }
+
+/* Gallery / Screenshot placeholders */
+.gallery { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.gallery-card { background: #1e2d3d; border: 2px dashed #333; border-radius: 8px; padding: 32px 16px; text-align: center; flex: 1; min-width: 200px; max-width: 300px; color: #aaa; }
+.gallery-card .card-icon { font-size: 2.5rem; margin-bottom: 8px; }
+.gallery-card .card-label { font-size: 0.9rem; color: #888; }
+
+/* FAQ */
+.faq-item { background: #1e2d3d; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; }
+.faq-item h3 { color: #4ecb71; }
+
+/* Footer */
+footer { text-align: center; padding: 40px 20px; background: #0d0d1a; color: #777; font-size: 0.9rem; }
+footer a { color: #4ecb71; text-decoration: none; }
+
+/* Final CTA */
+#final-cta { background: #162032; }
+#final-cta .btn { margin: 8px; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  .split { flex-direction: column; }
+  .steps { flex-direction: column; align-items: center; }
+  .step { max-width: 100%; }
+}
