@@ -1,12 +1,18 @@
-﻿/* PokerRangeTrainer Landing Page — Cloudflare Pages */
+﻿/* PokerRangeTrainer Landing Page - Cloudflare Pages */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #e0e0e0; background: #1a1a2e; line-height: 1.6; }
-section { padding: 80px 20px; max-width: 960px; margin: 0 auto; }
+
+/* Section layout */
+section { padding: 80px 24px; max-width: 1020px; margin: 0 auto; }
 h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 16px; }
-h2 { font-size: 2rem; font-weight: 600; margin-bottom: 24px; color: #4ecb71; }
+h2 { font-size: 2rem; font-weight: 600; margin-bottom: 32px; color: #4ecb71; }
+h2.center { text-align: center; }
 h3 { font-size: 1.4rem; margin-bottom: 12px; }
+h4 { font-size: 1.1rem; font-weight: 600; color: #e0e0e0; margin-bottom: 6px; }
 p { font-size: 1.1rem; margin-bottom: 16px; color: #cccccc; }
+
+/* Buttons */
 .btn { display: inline-block; padding: 14px 32px; border-radius: 6px; font-size: 1.05rem; font-weight: 600; text-decoration: none; cursor: pointer; margin: 8px 8px 8px 0; transition: all 0.2s; }
 .btn-primary { background: #4ecb71; color: #1a1a2e; }
 .btn-primary:hover { background: #3db85e; }
@@ -16,25 +22,31 @@ p { font-size: 1.1rem; margin-bottom: 16px; color: #cccccc; }
 .btn-accent:hover { background: #d4952a; }
 
 /* Hero */
-#hero { text-align: center; padding: 120px 20px 100px; background: linear-gradient(135deg, #0d0d1a 0%, #1a3a2a 50%, #0d0d1a 100%); }
+#hero { text-align: center; padding: 120px 24px 100px; background: linear-gradient(135deg, #0d0d1a 0%, #1a3a2a 50%, #0d0d1a 100%); }
 #hero h1 { font-size: 3.2rem; }
 #hero .subhead { font-size: 1.2rem; color: #aaaaaa; max-width: 640px; margin: 0 auto 32px; }
+.hero-note { color: #aaa; font-size: 0.95rem; margin-bottom: 20px; }
 
 /* Alternating sections */
 .alt-bg { background: #162032; }
+
+/* Split layout */
 .split { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
 .split > div { flex: 1; min-width: 280px; }
+.split ul { color: #ccc; margin-left: 20px; }
+.split ul li { margin-bottom: 6px; }
 
 /* CTA cards */
 .cta-card { background: #1e2d3d; border-radius: 12px; padding: 48px; text-align: center; border: 1px solid #2a3a4a; }
 .cta-card.accent { background: #2a2418; border-color: #4a3a1a; }
+.price-note { color: #e8a838; font-weight: 600; margin-top: 20px; }
 
 /* Steps */
-.steps { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
-.step { background: #1e2d3d; border-radius: 10px; padding: 28px 20px; text-align: center; flex: 1; min-width: 150px; max-width: 180px; }
+.steps { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.step { background: #1e2d3d; border-radius: 10px; padding: 28px 16px; text-align: center; flex: 1; min-width: 140px; max-width: 175px; }
 .step-num { font-size: 2.2rem; font-weight: 700; color: #4ecb71; margin-bottom: 8px; }
 
-/* Flow card (Problem section) */
+/* Flow card (Problem and Solution sections) */
 .flow-card {
   background: #1a1a2e;
   border: 1px solid #2a2a4a;
@@ -68,66 +80,84 @@ p { font-size: 1.1rem; margin-bottom: 16px; color: #cccccc; }
   border: 1px solid #4ecb71;
 }
 
-/* Screenshot card (Solution section) */
-.screenshot-card {
-  background: #1a1a2e;
-  border: 1px solid #2a2a4a;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-}
-.screenshot-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
 /* Gallery / Screenshots */
-.gallery { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 .gallery-card {
   background: #1a1a2e;
   border: 1px solid #2a2a4a;
   border-radius: 10px;
   padding: 16px;
-  text-align: center;
-  min-width: 200px;
-  flex: 1;
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
 }
-.gallery-card img {
+.gallery-img-wrap {
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 16 / 12;
+  overflow: hidden;
   border-radius: 6px;
-  margin-bottom: 10px;
-  border: 1px solid #2a2a4a;
+  margin-bottom: 14px;
+  background: #0d0d1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.card-label {
-  color: #ccc;
+.gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.gallery-card h4 {
+  margin-bottom: 4px;
+}
+.gallery-card .caption {
   font-size: 0.9rem;
-  line-height: 1.5;
-}
-.card-label small {
   color: #888;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.gallery-note {
+  text-align: center;
+  color: #888;
+  margin-top: 16px;
+  font-size: 0.9rem;
 }
 
 /* FAQ */
 .faq-item { background: #1e2d3d; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; }
 .faq-item h3 { color: #4ecb71; }
 
-/* Footer */
-footer { text-align: center; padding: 40px 20px; background: #0d0d1a; color: #777; font-size: 0.9rem; }
-footer a { color: #4ecb71; text-decoration: none; }
+/* Trust note */
+.trust-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.85rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 /* Final CTA */
 #final-cta { background: #162032; }
 #final-cta .btn { margin: 8px; }
 
+/* Footer */
+footer { text-align: center; padding: 40px 20px; background: #0d0d1a; color: #777; font-size: 0.9rem; }
+footer a { color: #4ecb71; text-decoration: none; }
+
+/* Mobile */
 @media (max-width: 768px) {
+  section { padding: 60px 20px; }
   h1 { font-size: 2rem; }
-  .split { flex-direction: column; }
+  #hero h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.6rem; }
+  .split { flex-direction: column; gap: 32px; }
   .steps { flex-direction: column; align-items: center; }
   .step { max-width: 100%; }
+  .gallery { grid-template-columns: 1fr; gap: 16px; }
   .gallery-card { max-width: 100%; }
+  .gallery-img-wrap { aspect-ratio: 16 / 10; }
 }
