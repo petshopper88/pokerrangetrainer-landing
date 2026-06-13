@@ -1,4 +1,4 @@
-/* PokerRangeTrainer Landing Page ¡ª Cloudflare Pages */
+ï»¿/* PokerRangeTrainer Landing Page â€” Cloudflare Pages */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #e0e0e0; background: #1a1a2e; line-height: 1.6; }
@@ -34,11 +34,83 @@ p { font-size: 1.1rem; margin-bottom: 16px; color: #cccccc; }
 .step { background: #1e2d3d; border-radius: 10px; padding: 28px 20px; text-align: center; flex: 1; min-width: 150px; max-width: 180px; }
 .step-num { font-size: 2.2rem; font-weight: 700; color: #4ecb71; margin-bottom: 8px; }
 
-/* Gallery / Screenshot placeholders */
+/* Flow card (Problem section) */
+.flow-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-height: 200px;
+  justify-content: center;
+}
+.flow-step {
+  background: #1e2d3d;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+  min-width: 140px;
+  text-align: center;
+}
+.flow-arrow {
+  color: #4ecb71;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.flow-step.result {
+  background: #1a3a2a;
+  color: #4ecb71;
+  border: 1px solid #4ecb71;
+}
+
+/* Screenshot card (Solution section) */
+.screenshot-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.screenshot-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Gallery / Screenshots */
 .gallery { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
-.gallery-card { background: #1e2d3d; border: 2px dashed #333; border-radius: 8px; padding: 32px 16px; text-align: center; flex: 1; min-width: 200px; max-width: 300px; color: #aaa; }
-.gallery-card .card-icon { font-size: 2.5rem; margin-bottom: 8px; }
-.gallery-card .card-label { font-size: 0.9rem; color: #888; }
+.gallery-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  min-width: 200px;
+  flex: 1;
+  max-width: 300px;
+}
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #2a2a4a;
+}
+.card-label {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.card-label small {
+  color: #888;
+}
 
 /* FAQ */
 .faq-item { background: #1e2d3d; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; }
@@ -57,61 +129,5 @@ footer a { color: #4ecb71; text-decoration: none; }
   .split { flex-direction: column; }
   .steps { flex-direction: column; align-items: center; }
   .step { max-width: 100%; }
-}
-
-/* Placeholder cards for screenshots / icons */
-.placeholder-card {
-  background: #1a1a2e;
-  border: 1px solid #2a2a4a;
-  border-radius: 10px;
-  padding: 30px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-height: 180px;
-}
-.placeholder-icon {
-  font-size: 3rem;
-  color: #4ecb71;
-  font-weight: bold;
-  opacity: 0.7;
-}
-.placeholder-icon.large {
-  font-size: 5rem;
-}
-.placeholder-label {
-  color: #aaa;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-.placeholder-label strong {
-  color: #4ecb71;
-}
-
-/* Gallery cards */
-.gallery-card {
-  background: #1a1a2e;
-  border: 1px solid #2a2a4a;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  min-width: 200px;
-  flex: 1;
-}
-.card-icon {
-  font-size: 2.5rem;
-  color: #4ecb71;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.card-label {
-  color: #ccc;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-.card-label small {
-  color: #888;
+  .gallery-card { max-width: 100%; }
 }

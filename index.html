@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -26,9 +26,14 @@
         <p>Solver tools show you the GTO answer. They do <strong>not</strong> teach you how ranges shift street by street.</p>
         <p>If you only memorize solutions, you never build real-time range-reading instinct.</p>
       </div>
-      <div class="placeholder-card">
-        <div class="placeholder-icon">?</div>
-        <div class="placeholder-label">Old Range<br>&rarr; Board<br>&rarr; Action<br>&rarr; New Range</div>
+      <div class="flow-card">
+        <div class="flow-step">Old Range</div>
+        <div class="flow-arrow">--&gt;</div>
+        <div class="flow-step">Board</div>
+        <div class="flow-arrow">--&gt;</div>
+        <div class="flow-step">Action</div>
+        <div class="flow-arrow">--&gt;</div>
+        <div class="flow-step result">New Range</div>
       </div>
     </div>
   </section>
@@ -37,13 +42,12 @@
   <section class="alt-bg">
     <h2>Range-Transition-First Training</h2>
     <div class="split">
-      <div class="placeholder-card">
-        <div class="placeholder-icon large">R</div>
-        <div class="placeholder-label">Old Range -&gt; Board -&gt; Action -&gt; <strong>New Range</strong></div>
+      <div class="screenshot-card">
+        <img src="assets/images/app-main-training.png" alt="PokerRangeTrainer Main Training UI" loading="lazy">
       </div>
       <div>
         <p>Every training spot gives you:</p>
-        <p>Old villain range -&gt; Board cards -&gt; Villain action -&gt; <strong>You predict the new villain range</strong></p>
+        <p>Old villain range --&gt; Board cards --&gt; Villain action --&gt; <strong>You predict the new villain range</strong></p>
         <ul style="color:#ccc; margin-left:20px;">
           <li>Preflop / Flop / Turn / River spots</li>
           <li>Instant accuracy scoring</li>
@@ -71,15 +75,15 @@
     <h2 style="text-align:center;">See It in Action</h2>
     <div class="gallery">
       <div class="gallery-card">
-        <div class="card-icon">[1]</div>
-        <div class="card-label">Main Training UI<br><small>Preflop Spot #1 with hand scenario</small></div>
+        <img src="assets/images/app-main-training.png" alt="Main Training UI - Preflop Spot with hand scenario" loading="lazy">
+        <div class="card-label">Main Training UI<br><small>Preflop Spot with hand scenario</small></div>
       </div>
       <div class="gallery-card">
-        <div class="card-icon">[2]</div>
+        <img src="assets/images/app-lesson-selection.png" alt="Lesson and Pack Selection - Starter Pack with instructions" loading="lazy">
         <div class="card-label">Lesson &amp; Pack Selection<br><small>Starter Pack with instructions</small></div>
       </div>
       <div class="gallery-card">
-        <div class="card-icon">[3]</div>
+        <img src="assets/images/app-early-access-unlock.png" alt="Early Access Unlock - Machine Code and License Token input" loading="lazy">
         <div class="card-label">Early Access Unlock<br><small>Machine Code + License Token input</small></div>
       </div>
     </div>
