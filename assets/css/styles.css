@@ -1,4 +1,4 @@
-ï»¿/* PokerRangeTrainer Landing Page â€” Cloudflare Pages */
+/* PokerRangeTrainer Landing Page ¡ª Cloudflare Pages */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: #e0e0e0; background: #1a1a2e; line-height: 1.6; }
@@ -57,4 +57,61 @@ footer a { color: #4ecb71; text-decoration: none; }
   .split { flex-direction: column; }
   .steps { flex-direction: column; align-items: center; }
   .step { max-width: 100%; }
+}
+
+/* Placeholder cards for screenshots / icons */
+.placeholder-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 180px;
+}
+.placeholder-icon {
+  font-size: 3rem;
+  color: #4ecb71;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.placeholder-icon.large {
+  font-size: 5rem;
+}
+.placeholder-label {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.placeholder-label strong {
+  color: #4ecb71;
+}
+
+/* Gallery cards */
+.gallery-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  min-width: 200px;
+  flex: 1;
+}
+.card-icon {
+  font-size: 2.5rem;
+  color: #4ecb71;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-label {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.card-label small {
+  color: #888;
 }
